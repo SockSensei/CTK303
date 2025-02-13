@@ -1,0 +1,150 @@
+body {
+  background-color: #999999;
+  margin: 0;
+  padding: 0;
+}
+
+#wraphome {
+  margin: 24px auto;
+  max-width: 1200px; /* Allows it to shrink when needed */
+  border: 1px solid black;
+  padding: 24px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+/* Header */
+header {
+  grid-column: span 12;
+  text-align: center;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Navigation */
+nav {
+  grid-column: span 12;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: xx-large;
+  display: block;
+  padding: 8px;
+}
+
+nav li a:hover {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+main {
+  grid-column: span 12;
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9;
+  border: 5px solid black;
+}
+
+footer {
+  grid-column: span 12;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+@media all and (max-width: 600px) {
+  #wraphome {
+    padding: 12px;
+    grid-column-gap: 12px;
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  nav li {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  nav li a {
+    font-size: large;
+    padding: 6px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    font-size: large;
+  }
+}
+
+@media all and (min-width: 601px) and (max-width: 1024px) {
+  #wraphome {
+    max-width: 90%;
+    padding: 16px;
+  }
+
+  header img {
+    width: 120px;
+    height: 120px;
+  }
+
+  nav li a {
+    font-size: x-large;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  #wraphome {
+    max-width: 1200px;
+  }
+}
