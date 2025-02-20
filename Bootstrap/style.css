@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-color: #b60707;
+    color: white;
+    padding: 100px 0;
+}
+
+.features {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.features h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
